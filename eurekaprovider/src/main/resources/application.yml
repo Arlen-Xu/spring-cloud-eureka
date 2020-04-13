@@ -1,0 +1,12 @@
+server:
+  port: 8811
+  servlet:
+    context-path: /eurekaprovider
+spring:
+  application:
+    name: eurekaprovider
+eureka:
+  client:
+    service-url:
+
+      defaultZone: http://cluster1:7071/eureka,http://cluster2:8081/eureka,http://cluster3:9091/eureka

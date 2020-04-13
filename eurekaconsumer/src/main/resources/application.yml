@@ -1,0 +1,16 @@
+server:
+  port: 8101
+  servlet:
+    context-path: /eurekaconsumer
+#设置服务的名称
+spring:
+  application:
+    name: eurekaconsumer
+eureka:
+  client:
+    service-url:
+      #Eureka 注册中心的地址，多个地址有逗号隔开
+      defaultZone: http://cluster1:7071/eureka,http://cluster2:8081/eureka,http://cluster3:9091/eureka
+  instance:
+    instance-id: eurekaconsumer
+    prefer-ip-address: true
